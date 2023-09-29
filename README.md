@@ -10,6 +10,8 @@
 [![code-quality](https://github.com/avansp/dl-repro/actions/workflows/code-quality-main.yaml/badge.svg)](https://github.com/ashleve/lightning-hydra-template/actions/workflows/code-quality-main.yaml)<br>
 [![license](https://img.shields.io/badge/License-MIT-green.svg?labelColor=gray)](https://github.com/ashleve/lightning-hydra-template#license)
 
+</div>
+
 ## Description
 
 My collection of DL models' reproduction codes.

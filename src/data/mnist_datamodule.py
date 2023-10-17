@@ -175,13 +175,14 @@ class MNISTDataModule(LightningDataModule):
     def predict_dataloader(self) -> DataLoader[Any]:
         """Create and return predict dataloader.
 
-        :return: The predict dataloader."""
+        :return: The predict dataloader.
+        """
         return DataLoader(
             dataset=self.data_test,
             batch_size=self.batch_size_per_device,
             num_workers=self.hparams.num_workers,
             pin_memory=self.hparams.pin_memory,
-            shuffle=True
+            shuffle=True,
         )
 
     def teardown(self, stage: Optional[str] = None) -> None:

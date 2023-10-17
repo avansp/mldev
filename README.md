@@ -70,6 +70,15 @@ pytest -k "not slow"
 
 </details>
 
+## Run with `Makefile`
+
+The easiest way to run is by using `make` command:
+
+```bash
+# Show what commands available
+make help
+```
+
 ## Training
 
 > :*Note*: all outputs are saved in logs directory with the model name.
@@ -88,4 +97,3 @@ There is also an example of using multiruns to search optimal hyper-parameters:
 # use multirun -m switch
 python src/train -m hparams_search=mnist_optuna experiment=mnist_train data.num_workers=20
 ```
-

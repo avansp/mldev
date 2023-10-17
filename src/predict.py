@@ -73,7 +73,9 @@ def prediction(cfg: DictConfig) -> Tuple[Union[List[Any], List[List[Any]], None]
         log_hyperparameters(object_dict)
 
     log.info("Starting prediction!")
-    predictions = trainer.predict(model=model, dataloaders=datamodule, ckpt_path=cfg.ckpt_path, return_predictions=True)
+    predictions = trainer.predict(
+        model=model, dataloaders=datamodule, ckpt_path=cfg.ckpt_path, return_predictions=True
+    )
     #
     # metric_dict = trainer.callback_metrics
 

@@ -10,7 +10,7 @@
 [![code-quality](https://github.com/avansp/mldev/actions/workflows/code-quality-main.yaml/badge.svg)](https://github.com/avansp/mldev/actions/workflows/code-quality-main.yaml)
 [![license](https://img.shields.io/badge/License-MIT-green.svg?labelColor=gray)](https://github.com/avansp/dl-repro#license)
 
-This is a simplified template derived from [@ashleve's lightning-hydra-template](/data/apps/miniconda3/condabin/conda).
+This is a simplified template derived from [@ashleve's lightning-hydra-template](https://github.com/ashleve/lightning-hydra-template).
 
 </div>
 

@@ -6,8 +6,8 @@
 [![pytorch](https://img.shields.io/badge/PyTorch_2.0+-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/get-started/locally/)
 [![lightning](https://img.shields.io/badge/-Lightning_2.0+-792ee5?logo=pytorchlightning&logoColor=white)](https://pytorchlightning.ai/)
 [![hydra](https://img.shields.io/badge/Config-Hydra_1.3-89b8cd)](https://hydra.cc/)<br>
-[![tests](https://github.com/avansp/dl-repro/actions/workflows/test.yml/badge.svg)](https://github.com/avansp/dl-repro/actions/workflows/test.yml)
-[![code-quality](https://github.com/avansp/dl-repro/actions/workflows/code-quality-main.yaml/badge.svg)](https://github.com/ashleve/lightning-hydra-template/actions/workflows/code-quality-main.yaml)
+[![tests](https://github.com/avansp/mldev/actions/workflows/test.yml/badge.svg)](https://github.com/avansp/mldev/actions/workflows/test.yml)
+[![code-quality](https://github.com/avansp/mldev/actions/workflows/code-quality-main.yaml/badge.svg)](https://github.com/avansp/mldev/actions/workflows/code-quality-main.yaml)
 [![license](https://img.shields.io/badge/License-MIT-green.svg?labelColor=gray)](https://github.com/avansp/dl-repro#license)
 
 This is a simplified template derived from [@ashleve's lightning-hydra-template](/data/apps/miniconda3/condabin/conda).

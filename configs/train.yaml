@@ -7,7 +7,7 @@ defaults:
   - data: mnist
   - model: mnist
   - callbacks: default
-  - logger: null # set logger here or use command line (e.g. `python train.py logger=tensorboard`)
+  - logger: csv # set logger here or use command line (e.g. `python train.py logger=tensorboard`)
   - trainer: default
   - paths: default
   - extras: default
@@ -28,6 +28,7 @@ defaults:
   - debug: null
 
 # task name, determines output directory path
+model_name: "MNIST_SimpleDenseNet"
 task_name: "train"
 
 # tags to help you identify your experiments

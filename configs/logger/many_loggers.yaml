@@ -1,4 +1,5 @@
 # train with many loggers at once
+# I think csv & tensorboard are enough & they don't need extra juices
 
 defaults:
   # - comet
@@ -6,4 +7,4 @@ defaults:
   # - mlflow
   # - neptune
   - tensorboard
-  - wandb
+  # - wandb

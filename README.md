@@ -12,22 +12,18 @@
 
 </div>
 
-## Collections
-
-My collection of DL models' reproduction codes.
-
 ## Installation
 
 #### Pip
 
 ```bash
 # clone project
-git clone https://github.com/YourGithubName/your-repo-name
-cd your-repo-name
+git clone https://github.com/avansp/dl-repro.git
+cd dl-repro
 
-# [OPTIONAL] create conda environment
-conda create -n myenv python=3.9
-conda activate myenv
+# create conda environment
+conda create -n dl-repro python=3.9
+conda activate dl-repro
 
 # install pytorch according to instructions
 # https://pytorch.org/get-started/
@@ -40,13 +36,54 @@ pip install -r requirements.txt
 
 ```bash
 # clone project
-git clone https://github.com/YourGithubName/your-repo-name
-cd your-repo-name
+git clone https://github.com/avansp/dl-repro.git
+cd dl-repro
 
 # create conda environment and install dependencies
-conda env create -f environment.yaml -n myenv
+conda env create -f environment.yaml -n dl-repro
 
 # activate conda environment
-conda activate myenv
+conda activate dl-repro
 ```
 
+#### Testing
+
+```bash
+# run all tests
+pytest
+
+# run tests from specific file
+pytest tests/test_train.py
+
+# run all tests except the ones marked as slow
+pytest -k "not slow"
+```
+
+## Collections
+
+> :*Note*: all outputs are saved in logs directory with the model name.
+
+<details>
+<summary><b>MNIST</b></summary>
+
+This is a default model when you just run train / eval / predict without a specific configuration, or
+you can also run the experiment defined in mnist_train:
+
+```bash
+# see configs/experiment/mnist_train.yaml
+python src/train.py experiment=mnist_train data.num_workers=20
+```
+
+There is also an example of using multiruns to search optimal hyperparameters:
+
+```bash
+# use multirun -m switch
+python src/train -m hparams_search=mnist_optuna experiment=mnist_train data.num_workers=20
+```
+
+See also:
+
+* **Data**: `configs/data/mnist.yaml`
+* **Model**: `configs/model/mnist.yaml`
+
+</details>

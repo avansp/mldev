@@ -11,7 +11,7 @@ defaults:
   - hydra: default
 
 model_name: "MNIST_SimpleDenseNet"
-task_name: "eval"
+task_name: "predict"
 
 tags: ["dev"]
 
